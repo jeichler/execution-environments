@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>jeichler/renovate-bot"
+  ],
+  "regexManagers": [
+    {
+      "description": "Update versions in execution-environment.yml",
+      "fileMatch": ["(^|/|\\.)execution-environment.yml$"],
+      "matchStrings": [
+        "# renovate: depName=(?<depName>.+?)(?: versioning=(?<versioning>[a-z-]+?))?\\s"
+      ],
+      "datasource": "docker",
+      "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
+    }
+  ]
+}
