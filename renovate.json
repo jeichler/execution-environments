@@ -3,12 +3,9 @@
   "extends": [
     "local>jeichler/renovate-bot"
   ],
-  "regex": {
-    "pinDigests": true
-  },
   "regexManagers": [
     {
-      "description": "Update versions in execution-environment.yml",
+      "description": "Update base image version in execution-environment.yml",
       "fileMatch": [
         "(^|/)execution-environment\\.yml$"
       ],
@@ -16,6 +13,23 @@
         "base_image:\\n\\s+name:[\\W]*(?<depName>.*?):(?<currentValue>.*?)[\\W]*\\n"
       ],
       "datasourceTemplate": "docker"
+    },
+    {
+      "description": "Update package_pip versions in execution-environment.yml",
+      "fileMatch": [
+        "(^|/)execution-environment\\.yml$"
+      ],
+      "matchStrings": [
+        "package_pip:[\\W]*(?<depName>.*?)?(===|~=|==|!=|<=|>=|<|>)(?<currentValue>.*?)[\\W]*\\n"
+      ],
+      "datasourceTemplate": "pypi"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchPaths": ["**/execution-environment.xml"],
+      "pinDigests": true
     }
   ]
 }
