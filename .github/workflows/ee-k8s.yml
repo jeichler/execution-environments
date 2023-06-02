@@ -1,0 +1,18 @@
+name: ee-k8s | build and push
+
+on:
+  push:
+    paths:
+      - ee-k8s/**
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0' # weekly
+
+jobs:
+  call-build-and-push-latest:
+    uses: ./.github/workflows/build-latest.yml
+    with:
+      subdir: ee-k8s
+    secrets: inherit
