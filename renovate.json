@@ -10,7 +10,7 @@
         "^execution-environment\\.yml$"
       ],
       "matchStrings": [
-        "name: (?<depName>.*?):(?<currentValue>.*?)@(?<currentDigest>sha256:[a-f0-9]+)\\s"
+        "name:[\\W]*(?<depName>.*?):(?<currentValue>.*?)[\\W]*\\n"
       ],
       "datasourceTemplate": "docker"
     }
