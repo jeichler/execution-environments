@@ -2,7 +2,7 @@
 version: 3
 images:
   base_image:
-    name: quay.io/ansible/awx-ee:22.2.0
+    name: quay.io/ansible/awx-ee:22.3.0
 dependencies:
   ansible_core:
     # renovate: datasource=pypi depName=ansible-core
