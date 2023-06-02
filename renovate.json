@@ -10,7 +10,7 @@
         "(^|/)execution-environment\\.yml$"
       ],
       "matchStrings": [
-        "name:[\\W]*(?<depName>.*?):(?<currentValue>.*?)[\\W]*\\n"
+        "base_image:\\n\\s+name:[\\W]*(?<depName>.*?):(?<currentValue>.*?)[\\W]*\\n"
       ],
       "datasourceTemplate": "docker"
     }
