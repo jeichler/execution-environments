@@ -1,6 +1,10 @@
 ---
 version: 3
 
+images:
+  base_image:
+    name: registry.access.redhat.com/ubi9/ubi-minimal:latest@sha256:b00f7556d64a698aad6cb63bb75b2692f1538926c6f619d6123cbc20a74239ec
+
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.15.0
@@ -9,7 +13,7 @@ dependencies:
   python_interpreter:
     package_system: "python311"
     python_path: "/usr/bin/python3.11"
-  python: requirements.txt
+  # python: requirements.txt
   system: |
     git-core [platform:rpm]
     sshpass [platform:rpm]
@@ -17,10 +21,6 @@ dependencies:
     gzip [platform:rpm]
     tar [platform:rpm]
     openssh [platform:rpm]
-
-images:
-  base_image:
-    name: registry.access.redhat.com/ubi9/ubi-minimal:latest@sha256:b00f7556d64a698aad6cb63bb75b2692f1538926c6f619d6123cbc20a74239ec
 
 options:
   package_manager_path: /usr/bin/microdnf

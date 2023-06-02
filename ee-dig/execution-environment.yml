@@ -1,5 +1,6 @@
 ---
 version: 3
+
 images:
   base_image:
     name: quay.io/jaeichle/ee-minimal-ubi9:latest@sha256:2b5689e53ef72fb7c67cd4180f3bbf49970c75a99d293b1a0d591aec87cda4d2
