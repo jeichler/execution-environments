@@ -10,7 +10,8 @@
       "matchStrings": [
         "\\s+image:\\s+name: (?<depName>[a-z-]+?):(?<currentValue>.+?)"
       ],
-      "versioningTemplate": "docker"
+      "versioningTemplate": "docker",
+      "datasourceTemplate": "docker"
     }
   ]
 }
