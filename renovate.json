@@ -7,7 +7,7 @@
     {
       "description": "Update versions in execution-environment.yml",
       "fileMatch": [
-        "^execution-environment\\.yml$"
+        "(^|/)execution-environment\\.yml$"
       ],
       "matchStrings": [
         "name:[\\W]*(?<depName>.*?):(?<currentValue>.*?)[\\W]*\\n"
