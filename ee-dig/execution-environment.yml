@@ -5,9 +5,8 @@ images:
     name: quay.io/ansible/awx-ee:22.3.0
 dependencies:
   ansible_core:
-    # renovate: datasource=pypi depName=ansible-core
-    package_pip: ansible-core==2.15.0
+    package_pip: ansible-core==2.14.4
   ansible_runner:
-    package_pip: ansible-runner
+    package_pip: ansible-runner==2.3.2
   galaxy: requirements.yml
   python: requirements.txt
