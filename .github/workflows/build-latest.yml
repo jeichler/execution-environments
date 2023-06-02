@@ -25,7 +25,8 @@ jobs:
     - name: Push to quay.io
       uses: redhat-actions/push-to-registry@v2
       with:
-        image: quay.io/jaeichle/${{ inputs.subdir }}
+        image: ${{ inputs.subdir }}
         tags: latest
+        registry: quay.io/jaeichle
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
