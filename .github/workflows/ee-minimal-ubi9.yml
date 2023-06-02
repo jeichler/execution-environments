@@ -1,9 +1,9 @@
-name: ee-minimal | build and push
+name: ee-minimal-ubi9 | build and push
 
 on:
   push:
     paths:
-      - ee-minimal/**
+      - ee-minimal-ubi9/**
     branches:
       - main
   workflow_dispatch:
@@ -14,5 +14,5 @@ jobs:
   call-build-and-push-latest:
     uses: ./.github/workflows/build-latest.yml
     with:
-      subdir: ee-minimal
+      subdir: ee-minimal-ubi9
     secrets: inherit
