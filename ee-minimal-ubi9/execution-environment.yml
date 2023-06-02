@@ -20,7 +20,7 @@ dependencies:
 
 images:
   base_image:
-    name: registry.access.redhat.com/ubi9/ubi-minimal:9.2-484
+    name: registry.access.redhat.com/ubi9/ubi-minimal:9.2-484@sha256:6b114b624088a32d69f1dcc95a2bf8a6393d08b0f6316cf1c42c6e0b01e1870a
 
 options:
   package_manager_path: /usr/bin/microdnf
