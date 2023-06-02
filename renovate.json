@@ -8,7 +8,7 @@
       "description": "Update versions in execution-environment.yml",
       "fileMatch": ["(^|/|\\.)execution-environment.yml$"],
       "matchStrings": [
-        "\\sname: (?<depName>.*?):(?<currentValue>.*?)(?@(?<currentDigest>sha256:[a-f0-9]+))\\s"
+        "\\sname: (?<depName>.*?):(?<currentValue>.*?)(?:@(?<currentDigest>sha256:[a-f0-9]+))\\s"
       ],
       "versioningTemplate": "docker",
       "datasourceTemplate": "docker"
