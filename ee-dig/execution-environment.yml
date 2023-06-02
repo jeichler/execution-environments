@@ -2,7 +2,7 @@
 version: 3
 images:
   base_image:
-    name: quay.io/ansible/awx-ee:22.3.0@sha256:a68c84bae21caaa6357cecc5e6d2cd5d6c3b5927025c46c8970394ca618509f7
+    name: quay.io/ansible/awx-ee:22.3.0@sha256:75880becc4bce2a824f1ac9369f57fe837add27ce77c6d625a779290ae0cedba
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.15.0
