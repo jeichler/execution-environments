@@ -9,8 +9,6 @@ dependencies:
   python_interpreter:
     package_system: "python311"
     python_path: "/usr/bin/python3.11"
-  galaxy: requirements.yml
-  python: requirements.txt
   system: |
     git-core [platform:rpm]
     sshpass [platform:rpm]
