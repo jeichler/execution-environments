@@ -7,6 +7,6 @@ dependencies:
   ansible_core:
     package_pip: ansible-core==2.14.4
   ansible_runner:
-    package_pip: ansible-runner==2.3.2
+    package_pip: ansible-runner==2.3.3
   galaxy: requirements.yml
   python: requirements.txt
