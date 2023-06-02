@@ -3,6 +3,9 @@
   "extends": [
     "local>jeichler/renovate-bot"
   ],
+  "regex": {
+    "pinDigests": true
+  },
   "regexManagers": [
     {
       "description": "Update versions in execution-environment.yml",
