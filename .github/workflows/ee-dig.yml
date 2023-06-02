@@ -1,0 +1,16 @@
+name: build and push ee-dig
+
+on:
+  push:
+    paths:
+      - ee-dig/**
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0' # weekly
+
+jobs:
+  call-build-and-push-latest:
+    uses: ./.github/workflows/build-latest.yml
+    with:
+      subdir: ee-dig
+    secrets: inherit
