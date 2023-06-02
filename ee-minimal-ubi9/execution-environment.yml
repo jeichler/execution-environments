@@ -13,7 +13,6 @@ dependencies:
     git-core [platform:rpm]
     sshpass [platform:rpm]
     rsync [platform:rpm]
-    grep [platform:rpm]
     gzip [platform:rpm]
     tar [platform:rpm]
     openssh [platform:rpm]
