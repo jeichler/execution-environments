@@ -1,0 +1,16 @@
+---
+collections:
+  - name: kubernetes.core
+    version: 2.4.0
+  - name: redhat_cop.controller_configuration
+    version: 2.3.1
+  - name: ansible.posix
+    version: 1.5.4
+  - name: community.okd
+    version: 2.3.0
+  - name: redhat_cop.ah_configuration
+    version: 1.1.1
+  - name: redhat_cop.ee_utilities
+    version: 2.0.7
+  - name: redhat_cop.aap_utilities
+    version: 2.2.4

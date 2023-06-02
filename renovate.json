@@ -11,7 +11,7 @@
         "(^|/)execution-environment\\.yml$"
       ],
       "matchStrings": [
-        "base_image:\\n\\s+name:\\s+\"(?<depName>[^:]*):(?<currentValue>[^\\s@]*)(@(?<currentDigest>sha256:[0-9a-f]*))?\""
+        "base_image:\\n\\s+name:\\s+(?\")(?<depName>[^:]*):(?<currentValue>[^\\s@]*)(@(?<currentDigest>sha256:[0-9a-f]*))?(?\")"
       ],
       "datasourceTemplate": "docker"
     },

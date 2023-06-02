@@ -1,0 +1,18 @@
+name: ee-redhat-cop-collections | build and push
+
+on:
+  push:
+    paths:
+      - ee-redhat-cop-collections/**
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0' # weekly
+
+jobs:
+  call-build-and-push-latest:
+    uses: ./.github/workflows/build-latest.yml
+    with:
+      subdir: ee-redhat-cop-collections
+    secrets: inherit
