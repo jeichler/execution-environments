@@ -3,9 +3,6 @@
   "extends": [
     "local>jeichler/renovate-bot"
   ],
-  "regex": {
-    "pinDigests": true
-  },
   "regexManagers": [
     {
       "description": "Update base image version in execution-environment.yml",
@@ -31,7 +28,7 @@
   "packageRules": [
     {
       "matchDatasources": ["docker"],
-      "matchPaths": ["**/execution-environment.xml"],
+      "matchPaths": ["**/execution-environment.yml"],
       "pinDigests": true
     }
   ]
