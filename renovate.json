@@ -8,8 +8,7 @@
       "description": "Update versions in execution-environment.yml",
       "fileMatch": ["(^|/|\\.)execution-environment.yml$"],
       "matchStrings": [
-        "\\s+# renovate: datasource=(?<datasource>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\s+name: (?<depName>[a-z-]+?):(?<currentValue>.+?)\\s",
-        "\\s+# renovate: datasource=(?<datasource>.+?)(?: (?:packageName|lookupName)=(?<packageName>.+?))?(?: versioning=(?<versioning>[a-z-]+?))?\\s+package_pip: (?<depName>[a-z-]+?)==(?<currentValue>.+?)\\s"
+        "\\s+# renovate: datasource=(?<datasource>.+?)?(?: versioning=(?<versioning>[a-z-]+?))?\\s+name: (?<depName>[a-z-]+?):(?<currentValue>.+?)\\s"
       ],
       "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
     }
