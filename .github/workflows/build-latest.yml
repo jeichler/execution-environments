@@ -21,7 +21,7 @@ jobs:
     - name: Install ansible-builder
       run: pip install -r requirements.txt
     - name: Build image
-      run: cd ${{ inputs.subdir }} ; ansible-builder build -t quay.io/jaeichle/${{ inputs.subdir }}:latest
+      run: cd ${{ inputs.subdir }} ; ansible-builder build -v2 -t quay.io/jaeichle/${{ inputs.subdir }}:latest
     - name: Push to quay.io
       uses: redhat-actions/push-to-registry@v2
       with:
