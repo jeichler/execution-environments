@@ -21,12 +21,22 @@ jobs:
     - name: Install ansible-builder
       run: pip install -r requirements.txt
     - name: Build image
-      run: cd ${{ inputs.subdir }} ; ansible-builder build -v3 -t quay.io/jaeichle/${{ inputs.subdir }}:latest
-    - name: Push to quay.io
-      uses: redhat-actions/push-to-registry@v2
+      run: ansible-builder create
+      working-directory: ${{ inputs.subdir }}
+    - name: Build Image with Buildah
+      id: build-image
+      uses: redhat-actions/buildah-build@v2
       with:
         image: ${{ inputs.subdir }}
         tags: latest
+        containerfiles: |
+          ./${{ inputs.subdir }}/context/Containerfile
+        context: ${{ inputs.subdir }}/context
+    - name: Push to quay.io
+      uses: redhat-actions/push-to-registry@v2
+      with:
+        image: ${{ steps.build-image.outputs.image }}
+        tags: ${{ steps.build-image.outputs.tags }}
         registry: quay.io/jaeichle
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
