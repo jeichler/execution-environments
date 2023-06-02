@@ -3,9 +3,7 @@ version: 3
 
 images:
   base_image:
-    # this is latest
-    # TODO: renovate
-    name: quay.io/jaeichle/ee-minimal-ubi9@sha256:696b3739c84acc415f675dca1f17d74c16e2262ff0265744bce24aa15d11a59b
+    name: quay.io/jaeichle/ee-minimal-ubi9:latest
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.15.0
