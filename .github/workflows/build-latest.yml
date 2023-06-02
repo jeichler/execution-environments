@@ -28,7 +28,7 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         image: ${{ inputs.subdir }}
-        tags: latest
+        tags: latest ${{ github.sha }}
         containerfiles: |
           ./${{ inputs.subdir }}/context/Containerfile
         context: ${{ inputs.subdir }}/context
