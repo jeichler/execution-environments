@@ -3,4 +3,3 @@ collections:
     version: 7.0.1
   - name: ansible.posix
     version: 1.5.4
-
