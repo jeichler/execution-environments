@@ -27,6 +27,5 @@ jobs:
       with:
         image: quay.io/jaeichle/${{ inputs.subdir }}
         tags: latest
-        registry: quay.io/jaeichle
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
