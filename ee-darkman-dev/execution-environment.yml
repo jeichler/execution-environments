@@ -3,7 +3,7 @@ version: 3
 
 images:
   base_image:
-    name: quay.io/fedora/fedora:39@sha256:3bb93e6407d46d411447e913c8bb1856fcc81dd2347845345892f5a402f75873
+    name: quay.io/jaeichle/ee-minimal-ubi9:latest@sha256:c94eb14307b282261e1cc39fdd433f2eeba2dbf21e50321d1cb31d9af8bc4e00
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.15.0
@@ -13,3 +13,6 @@ dependencies:
     python_path: "/usr/bin/python3.11"
   galaxy: requirements.yml
   python: requirements.txt
+
+options:
+  package_manager_path: /usr/bin/microdnf
