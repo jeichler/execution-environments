@@ -1,0 +1,18 @@
+---
+version: 3
+
+images:
+  base_image:
+    name: quay.io/jaeichle/ee-minimal-ubi9:latest@sha256:c94eb14307b282261e1cc39fdd433f2eeba2dbf21e50321d1cb31d9af8bc4e00
+dependencies:
+  ansible_core:
+    package_pip: ansible-core==2.15.0
+  ansible_runner:
+    package_pip: ansible-runner==2.3.3
+  python_interpreter:
+    python_path: "/usr/bin/python3.11"
+  galaxy: requirements.yml
+  python: requirements.txt
+
+options:
+  package_manager_path: /usr/bin/microdnf
