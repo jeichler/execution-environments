@@ -3,7 +3,7 @@ version: 3
 
 images:
   base_image:
-    name: registry.access.redhat.com/ubi9/ubi-minimal:latest@sha256:b00f7556d64a698aad6cb63bb75b2692f1538926c6f619d6123cbc20a74239ec
+    name: registry.access.redhat.com/ubi9/ubi-minimal:latest@sha256:8bf03cbc3aedde6e949090290c1e336613ac423d3451b7b1bcb704f0cf8fac88
 
 dependencies:
   ansible_core:
