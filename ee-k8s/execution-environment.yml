@@ -3,7 +3,7 @@ version: 3
 
 images:
   base_image:
-    name: quay.io/fedora/fedora:39@sha256:12edb9669ce3dc3904daa52409db135a9031941717404891f952e10f9a50b5d2
+    name: quay.io/fedora/fedora:39@sha256:bd44a41e4808fbc01543d3e8c1ac8202807cb244d185cb84d3e03d13ebc22f13
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.15.1
