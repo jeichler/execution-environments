@@ -9,7 +9,7 @@ collections:
   - name: freeipa.ansible_freeipa
     version: 1.11.0
   - name: hetzner.hcloud
-    version: 1.15.0
+    version: 1.16.0
   - name: containers.podman
     version: 1.10.2
 roles:
