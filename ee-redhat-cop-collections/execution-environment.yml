@@ -5,7 +5,7 @@ images:
     name: quay.io/fedora/fedora:39@sha256:61bf72b64ff3a09764dd923848e24265c5f64a6e2eb0b6095366d5123c8c29be
 dependencies:
   ansible_core:
-    package_pip: ansible-core==2.15.1
+    package_pip: ansible-core==2.15.2
   ansible_runner:
     package_pip: ansible-runner==2.3.3
   python_interpreter:
