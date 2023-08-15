@@ -2,13 +2,14 @@
 version: 3
 images:
   base_image:
-    name: quay.io/fedora/fedora:39@sha256:65a16e93b011ce15861d96313956133f49bf803ef78246fee7fe28092ccb60c6
+    name: quay.io/centos/centos:stream9
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.15.3
   ansible_runner:
     package_pip: ansible-runner==2.3.3
   python_interpreter:
+    package_system: "python311"
     python_path: "/usr/bin/python3.11"
   galaxy: requirements.yml
   python: requirements.txt
