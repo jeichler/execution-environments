@@ -2,7 +2,7 @@
 version: 3
 images:
   base_image:
-    name: quay.io/centos/centos:stream9
+    name: quay.io/centos/centos:stream9-minimal@sha256:de78f91ccf9dc1569de743024a201922470da3b9dd20cca1d8d71873a5f760f2
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.15.3
@@ -13,3 +13,5 @@ dependencies:
     python_path: "/usr/bin/python3.11"
   galaxy: requirements.yml
   python: requirements.txt
+options:
+  package_manager_path: /usr/bin/microdnf
