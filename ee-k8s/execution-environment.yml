@@ -14,3 +14,5 @@ dependencies:
     python_path: "/usr/bin/python3.11"
   galaxy: requirements.yml
   python: requirements.txt
+options:
+  package_manager_path: /usr/bin/microdnf
