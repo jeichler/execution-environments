@@ -9,7 +9,7 @@ dependencies:
     package_pip: ansible-core==2.15.3
   ansible_runner:
     package_pip: ansible-runner==2.3.3
-  python_interpreter:
-    python_path: "/usr/bin/python3.11"
+  # python_interpreter:
+  #   python_path: "/usr/bin/python3.11"
   galaxy: requirements.yml
   python: requirements.txt
