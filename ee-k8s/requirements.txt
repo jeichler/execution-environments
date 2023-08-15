@@ -1,1 +1,1 @@
-kubernetes==26.1.0
+kubernetes==27.2.0
