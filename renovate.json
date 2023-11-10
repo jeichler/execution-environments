@@ -4,6 +4,7 @@
     "local>jeichler/renovate-bot",
     "default:automergeDigest"
   ],
+  "commitMessagePrefix": "{{#if (and isMajor (equals datasource 'galaxy') }}BREAKING CHANGE{{/if}}",
   "regexManagers": [
     {
       "description": "Update base image version in execution-environment.yml",
