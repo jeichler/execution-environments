@@ -4,7 +4,7 @@
     "local>jeichler/renovate-bot",
     "default:automergeDigest"
   ],
-  "commitMessagePrefix": "{{#if (and isMajor (equals datasource 'pypi')) }}BREAKING CHANGE{{/if}}",
+  "commitMessagePrefix": "{{#if (and isMajor) }}BREAKING CHANGE((depNameSanitized)):{{else}}(semanticPrefix){{/if}}",
   "regexManagers": [
     {
       "description": "Update base image version in execution-environment.yml",
