@@ -1,5 +1,5 @@
 collections:
   - name: community.general
-    version: 7.4.0
+    version: 7.5.1
   - name: ansible.posix
     version: 1.5.4
