@@ -6,7 +6,7 @@ images:
     name: quay.io/centos/centos:stream9-minimal@sha256:a6cb9fa52d60cb3dec2b812caf345dc4ce3942e03f1d3ce06d83121053030fd8
 dependencies:
   ansible_core:
-    package_pip: ansible-core==2.16.0
+    package_pip: ansible-core==2.16.1
   ansible_runner:
     package_pip: ansible-runner==2.3.4
   python_interpreter:
