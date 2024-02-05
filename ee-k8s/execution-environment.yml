@@ -14,5 +14,12 @@ dependencies:
     python_path: "/usr/bin/python3.11"
   galaxy: requirements.yml
   python: requirements.txt
+  system: |
+    git-core [platform:rpm]
+    sshpass [platform:rpm]
+    rsync [platform:rpm]
+    gzip [platform:rpm]
+    tar [platform:rpm]
+    openssh [platform:rpm]
 options:
   package_manager_path: /usr/bin/microdnf
