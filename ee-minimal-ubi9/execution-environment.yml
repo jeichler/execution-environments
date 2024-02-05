@@ -21,6 +21,7 @@ dependencies:
     gzip [platform:rpm]
     tar [platform:rpm]
     openssh [platform:rpm]
+    openssh-clients [platform:rpm]
 
 options:
   package_manager_path: /usr/bin/microdnf
