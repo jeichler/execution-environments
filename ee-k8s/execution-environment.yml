@@ -10,8 +10,8 @@ dependencies:
   ansible_runner:
     package_pip: ansible-runner==2.3.4
   python_interpreter:
-    package_system: "python311"
-    python_path: "/usr/bin/python3.11"
+    package_system: "python39"
+    python_path: "/usr/bin/python3"
   galaxy: requirements.yml
   python: requirements.txt
   system: |
@@ -25,5 +25,5 @@ options:
   package_manager_path: /usr/bin/microdnf
 additional_build_steps:
   append_final:
-    - RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
+#    - RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 1
     - RUN curl -L https://mirror.openshift.com/pub/openshift-v4/clients/helm/latest/helm-linux-amd64 -o /usr/local/bin/helm && chmod +x /usr/local/bin/helm
