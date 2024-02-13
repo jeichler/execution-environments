@@ -7,7 +7,7 @@ dependencies:
   ansible_core:
     package_pip: ansible-core==2.16.3
   ansible_runner:
-    package_pip: ansible-runner==2.3.4
+    package_pip: ansible-runner==2.3.5
   python_interpreter:
     package_system: "python311"
     python_path: "/usr/bin/python3.11"
