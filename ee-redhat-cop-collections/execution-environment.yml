@@ -2,7 +2,7 @@
 version: 3
 images:
   base_image:
-    name: quay.io/centos/centos:stream9-minimal@sha256:003ca4b1b08b0d4197d4736e8ee4d903b10b0e854c2fae8c9b58a0c1b03cfe9b
+    name: quay.io/centos/centos:stream9-minimal@sha256:e3042e1ca03a4e9ca06b608f69045e6f2f8d882a73dadc8af543f9d79ab736a1
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.16.4
