@@ -7,7 +7,7 @@ images:
 
 dependencies:
   ansible_core:
-    package_pip: ansible-core==2.16.5
+    package_pip: ansible-core==2.16.6
   ansible_runner:
     package_pip: ansible-runner==2.3.6
   python_interpreter:
