@@ -1,2 +1,2 @@
 kubernetes==29.0.0
-ansible-lint==24.2.2
+ansible-lint==24.2.3
