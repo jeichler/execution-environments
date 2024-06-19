@@ -1,5 +1,8 @@
+---
 collections:
   - name: kubernetes.core
     version: 5.0.0
   - name: community.okd
     version: 4.0.0
+  - name: operator_sdk.util
+    version: "0.5.0"
