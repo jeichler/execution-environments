@@ -3,7 +3,7 @@ version: 3
 
 images:
   base_image:
-    name: quay.io/jaeichle/ee-minimal-ubi9:latest@sha256:1ba6756f11380a44ad42241f6781a047b949ace6880e52ec7aaf1f70c995524c
+    name: quay.io/jaeichle/ee-minimal-ubi9:latest@sha256:7097fbf52a7056b1b2f3559f1c6d11d12773664c0b906d3721634e82a07e079c
 dependencies:
   ansible_core:
     package_pip: ansible-core==2.17.2
