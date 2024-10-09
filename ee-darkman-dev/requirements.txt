@@ -1,2 +1,2 @@
-hcloud==2.2.1
+hcloud==2.3.0
 ansible-merge-vars==5.0.0
