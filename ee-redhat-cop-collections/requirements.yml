@@ -14,3 +14,5 @@ collections:
     version: 2.0.7
   - name: redhat_cop.aap_utilities
     version: 2.2.4
+  - name: operator_sdk.util
+    version: "0.5.0"
