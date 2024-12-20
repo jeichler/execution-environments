@@ -5,7 +5,7 @@ collections:
   - name: redhat_cop.controller_configuration
     version: 2.3.1
   - name: ansible.posix
-    version: 1.6.2
+    version: 2.0.0
   - name: community.okd
     version: 4.0.1
   - name: redhat_cop.ah_configuration
