@@ -6,7 +6,7 @@ images:
     name: quay.io/jaeichle/ee-minimal-ubi9:latest@sha256:8db1efc9d6686d4cbe407c1200a83e8fe74e4a014962612c18f4e1e137bebbc5
 dependencies:
   ansible_core:
-    package_pip: ansible-core==2.18.1
+    package_pip: ansible-core==2.18.2
   ansible_runner:
     package_pip: ansible-runner==2.4.0
   python_interpreter:
