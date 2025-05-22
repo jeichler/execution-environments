@@ -7,7 +7,7 @@ collections:
   - name: community.general
     version: 8.3.0
   - name: freeipa.ansible_freeipa
-    version: 1.14.6
+    version: 1.14.7
   - name: hetzner.hcloud
     version: 4.3.0
   - name: containers.podman
