@@ -1,4 +1,4 @@
 ansible-lint==25.5.0
 kubernetes==32.0.1
-kubernetes-validate==1.32.0
+kubernetes-validate==1.33.0
 PyYAML==6.0.2
