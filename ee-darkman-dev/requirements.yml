@@ -11,6 +11,6 @@ collections:
   - name: hetzner.hcloud
     version: 4.3.0
   - name: containers.podman
-    version: 1.17.0
+    version: 1.20.1
 roles:
   - name: geerlingguy.ntp
