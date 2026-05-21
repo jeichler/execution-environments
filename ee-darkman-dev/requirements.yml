@@ -1,16 +1,16 @@
 ---
 collections:
   - name: ansible.netcommon
-    version: 8.0.0
+    version: 8.5.2
   - name: ansible.posix
-    version: 2.0.0
+    version: 2.2.0
   - name: community.general
     version: 8.3.0
   - name: freeipa.ansible_freeipa
-    version: 1.14.7
+    version: 1.16.0
   - name: hetzner.hcloud
     version: 4.3.0
   - name: containers.podman
-    version: 1.17.0
+    version: 1.20.1
 roles:
   - name: geerlingguy.ntp
