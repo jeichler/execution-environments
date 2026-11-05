@@ -25,7 +25,7 @@ jobs:
       working-directory: ${{ inputs.subdir }}
     - name: Build Image with Buildah
       id: build-image
-      uses: redhat-actions/buildah-build@v2
+      uses: redhat-actions/buildah-build@v3
       with:
         image: ${{ inputs.subdir }}
         tags: latest ${{ github.sha }}
